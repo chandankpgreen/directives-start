@@ -20,7 +20,9 @@
         </div>
       </ul>
       <p appBasicHighlight>Style me with basic directive</p>
-      <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Style me with basic directive</p>
+      <!-- <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Style me with basic directive</p> -->
+      The one below with directive alias as used in ngClass
+      <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'" >Style me with basic directive</p>
 
       <!-- <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
